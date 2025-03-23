@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
+import Clientes from './components/maestros/Clientes';
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -26,7 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             {/* Rutas de Maestros */}
-            <Route path="/maestros/clientes" element={<div className="p-6">Clientes</div>} />
+            <Route path="/maestros/clientes" element={<Clientes />} />
             <Route path="/maestros/productos" element={<div className="p-6">Productos</div>} />
             <Route path="/maestros/proveedores" element={<div className="p-6">Proveedores</div>} />
             <Route path="/maestros/vendedores" element={<div className="p-6">Vendedores</div>} />

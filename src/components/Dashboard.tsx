@@ -30,9 +30,9 @@ const inventoryData: InventoryData[] = [
 ];
 
 const productosAgotados = [
-  { id: 1, nombre: 'Dolor Grip', precio: '$5.00', imagen: '🌡️' },
-  { id: 2, nombre: 'Metocarbamol', precio: '$7.00', imagen: '💊' },
-  { id: 3, nombre: 'DiclofenacGEL', precio: '$23.00', imagen: '🧴' },
+  { id: 1, nombre: 'Dolex Gripa', precio: '$5.00', imagen: '🌡️' },
+  { id: 2, nombre: 'Meloxicam', precio: '$7.00', imagen: '💊' },
+  { id: 3, nombre: 'DiclofenacoGEL', precio: '$23.00', imagen: '🧴' },
   { id: 4, nombre: 'Cinta Kinesiológica', precio: '$18.00', imagen: '🩹' },
 ];
 
@@ -42,7 +42,6 @@ const Dashboard = () => {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Dashboard</h1>
-          <p className="text-gray-600 dark:text-gray-300">Bienvenido al sistema POS de farmacias</p>
         </div>
         <div className="flex gap-4">
           <Card className="p-4">
@@ -87,7 +86,7 @@ const Dashboard = () => {
         </Col>
 
         <Card>
-          <Title>Productos Pendientes</Title>
+          <Title>Productos Recientes</Title>
           <div className="mt-6">
             {productosAgotados.map((producto) => (
               <div
